@@ -9,12 +9,12 @@ def move():
     velocity_publisher = rospy.Publisher('/cmd_vel', Twist, queue_size=10)
     # print(velocity_publisher)
     vel_msg = Twist()
-    
+    #changing speed to 0.8 is better
     #Receiveing the user's input
     print("Let's move your robot")
     distance = 2
     angleRate = 0.5
-    speed = 0.15
+    speed = 0.8
     
     # Give velocity command in the x direction only
     vel_msg.linear.x = abs(speed)
