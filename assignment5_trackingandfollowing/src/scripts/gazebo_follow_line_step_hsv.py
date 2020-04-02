@@ -58,9 +58,9 @@ class LineFollower(object):
 	Enter controller here.
         """
 
-        # print('----info----')
-        # print(height,width,channels)
-        # print(cx,cy)
+        print('----info----')
+        print(height,width,channels)
+        print(cx,cy)
         err = cx - height/2
         kp = rospy.get_param('kp') 				# kp = 1/1250		
         twist_object = Twist()

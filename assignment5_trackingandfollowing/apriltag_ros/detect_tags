@@ -1,6 +1,0 @@
-roscore
-(on turtlebot) roslaunch turtlebot3_bringup turtlebot3_rpicamera.launch
-(decompressing) rosrun image_transport republish compressed in:=raspicam_node/image raw out:=raspicam_node/image
-(rectifying) ROS_NAMESPACE=raspicam_node rosrun image_proc image_proc image_raw:=image _approximate_s=true _queue_size:=20
-(launching tag_detections) roslaunch apriltag_ros continuous_detection.launch
-(launch rviz) rosrun rviz rviz -d /home/drew/.rviz/apriltag.rviz
